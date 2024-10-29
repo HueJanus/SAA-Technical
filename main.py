@@ -65,7 +65,7 @@ for i, ship in enumerate(ship_names):
             "duration": duration_days
         })
         
-        #Calculate duration in days only for maintenance bars
+        #Display duration in days only for maintenance bars
         if period_type == "Maintenance":
             ax.text(start_date + (end_date - start_date) / 2,  #Positioning in the middle of the bar
                     y_position,
@@ -93,7 +93,7 @@ plt.tight_layout()  #Improve spacing
 #Add hover functionality
 cursor = mplcursors.cursor(bars, hover=True)
 
-#Customize the tooltip
+#Customize the tooltip when hovering
 @cursor.connect("add")
 def on_add(sel):
     index = bars.index(sel.artist)  #Get the index of the bar in the list
