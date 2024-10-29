@@ -15,7 +15,7 @@ The task was to build a Gantt chart with provided information on ships, with the
 ## Steps to replicate
 To clone and run this application, you'll need Git and Python 3.12.1 installed on your computer. 
 1. Download the repository or clone it using: `git clone https://github.com/HueJanus/SAA-Technical.git`.
-2. In the repository, run `pip install requirements.txt` to install required libraries.
+2. In the repository, run `pip install -r requirements.txt` to install required libraries.
 3. Either run `python main.py` or press your run code button while looking at the `main.py` file.
     - I have also included the attempt with plotly which can found at `plotly_try.py`.
 
